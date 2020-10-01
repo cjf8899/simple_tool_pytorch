@@ -1,4 +1,13 @@
-# Auto-Augment
+# Simple-Tool-Pytorch
+
+## Getting Started
+```Shell
+cd (yourprojectdir)
+git clone https://github.com/cjf8899/simple-tool-pytorch.git
+
+```
+
+## Auto-Augment
 
 ```python
 from simple-tool-pytorch import ImageNetPolicy, CIFAR10Policy, SVHNPolicy
@@ -15,7 +24,7 @@ loader = DataLoader(data, ...)
 ```
 source : https://github.com/DeepVoltaire/AutoAugment
 
-# Warmup-Cosine-Lr
+## Warmup-Cosine-Lr
 ```python
 from simple-tool-pytorch import GradualWarmupScheduler
 ...
@@ -32,7 +41,7 @@ for i, (images, labels) in enumerate(train_data):
 ```
 source : https://github.com/seominseok0429/pytorch-warmup-cosine-lr
 
-# Mixup
+## Mixup
 
 ```python
 from simple-tool-pytorch import mixup_data, mixup_criterion
@@ -55,7 +64,7 @@ for i, (images, labels) in enumerate(train_data):
     ...
 ```
 
-# Label-Smoothing
+## Label-Smoothing
 
 ```python
 from simple-tool-pytorch import LabelSmoothingCrossEntropy
