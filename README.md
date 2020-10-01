@@ -12,3 +12,6 @@ data = ImageFolder(rootdir, transform=transforms.Compose(
                        transforms.Normalize(...)]))
 loader = DataLoader(data, ...)
 ```
+source : <a link =https://github.com/DeepVoltaire/AutoAugment>https://github.com/DeepVoltaire/AutoAugment</a>
+
+https://github.com/DeepVoltaire/AutoAugment
