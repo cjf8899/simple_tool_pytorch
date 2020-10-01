@@ -67,9 +67,9 @@ criterion = LabelSmoothingCrossEntropy()
 for i, (images, labels) in enumerate(train_data):
 ...
 
-loss = criterion(outputs, targets)
-loss.backward()
-optimizer.step()
+    loss = criterion(outputs, targets)
+    loss.backward()
+    optimizer.step()
 ...
 ```
 
