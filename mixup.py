@@ -4,7 +4,6 @@ import torch
 
 __all__ = ['mixup_data', 'mixup_criterion']
 
-
 @torch.no_grad()
 def mixup_data(x, y, alpha=0.2):
     """Returns mixed inputs, pairs of targets, and lambda
