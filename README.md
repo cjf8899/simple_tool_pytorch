@@ -14,7 +14,7 @@ from simple_tool_pytorch import ImageNetPolicy, CIFAR10Policy, SVHNPolicy
 ...
 
 data = ImageFolder(rootdir, transform=transforms.Compose(
-                      [transforms.RandomResizedCrop(224), 
+                      [transforms.RandomResizedCrop(256), 
                        transforms.RandomHorizontalFlip(), 
                        ImageNetPolicy(), # CIFAR10Policy(),  SVHNPolicy()
                        transforms.ToTensor(),
@@ -84,3 +84,20 @@ for i, (images, labels) in enumerate(train_data):
 ```
 
 source : https://github.com/seominseok0429/label-smoothing-visualization-pytorch
+
+## Random-erasing-augmentation
+
+```python
+from simple_tool_pytorch import RandomErasing
+...
+
+erasing_percent = 0.5
+data = ImageFolder(rootdir, transform=transforms.Compose(
+                      [transforms.RandomResizedCrop(256), 
+                       transforms.RandomHorizontalFlip(), 
+                       transforms.ToTensor(),
+                       transforms.Normalize((0.4914, 0.4822, 0.4465), (...)),
+                       RandomErasing(probability=erasing_percent, mean=[0.4914, 0.4822, 0.4465])]))
+loader = DataLoader(data, ...)
+
+```
