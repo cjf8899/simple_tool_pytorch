@@ -10,7 +10,7 @@ git clone https://github.com/cjf8899/simple-tool-pytorch.git
 ## Auto-Augment
 
 ```python
-from simple-tool-pytorch import ImageNetPolicy, CIFAR10Policy, SVHNPolicy
+from simple_tool_pytorch import ImageNetPolicy, CIFAR10Policy, SVHNPolicy
 ...
 
 data = ImageFolder(rootdir, transform=transforms.Compose(
@@ -26,7 +26,7 @@ source : https://github.com/DeepVoltaire/AutoAugment
 
 ## Warmup-Cosine-Lr
 ```python
-from simple-tool-pytorch import GradualWarmupScheduler
+from simple_tool_pytorch import GradualWarmupScheduler
 ...
 
 criterion = nn.CrossEntropyLoss()
@@ -44,7 +44,7 @@ source : https://github.com/seominseok0429/pytorch-warmup-cosine-lr
 ## Mixup
 
 ```python
-from simple-tool-pytorch import mixup_data, mixup_criterion
+from simple_tool_pytorch import mixup_data, mixup_criterion
 ...
 
 alpha = 0.2  # set beta distributed parm, 0.2 is recommend.
@@ -68,7 +68,7 @@ for i, (images, labels) in enumerate(train_data):
 ## Label-Smoothing
 
 ```python
-from simple-tool-pytorch import LabelSmoothingCrossEntropy
+from simple_tool_pytorch import LabelSmoothingCrossEntropy
 ...
 
 criterion = LabelSmoothingCrossEntropy()
