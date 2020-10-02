@@ -49,6 +49,7 @@ from simple-tool-pytorch import mixup_data, mixup_criterion
 
 alpha = 0.2  # set beta distributed parm, 0.2 is recommend.
 criterion = torch.nn.CrossEntropyLoss()
+optimizer = optim.SGD(net.parameters(), lr=args.lr, momentum=0.9)
 
 for i, (images, labels) in enumerate(train_data):
     images = images.cuda()
