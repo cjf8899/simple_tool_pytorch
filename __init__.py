@@ -1,4 +1,4 @@
-from scheduler import GradualWarmupScheduler
-from autoaugment import ImageNetPolicy, CIFAR10Policy, SVHNPolicy
-from mixup import mixup_data, mixup_criterion
-from labelsmoothing import LabelSmoothingCrossEntropy
+from .scheduler import *
+from .autoaugment import *
+from .mixup import *
+from .labelsmoothing import *
