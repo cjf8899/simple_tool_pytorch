@@ -6,6 +6,14 @@ cd (yourprojectdir)
 git clone https://github.com/cjf8899/simple-tool-pytorch.git
 
 ```
+## Summary
+- [Auto-Augment](https://github.com/cjf8899/simple_tool_pytorch#Auto-Augment)
+- [Warmup-Cosine-Lr](https://github.com/cjf8899/simple_tool_pytorch#Warmup-Cosine-Lr)
+- [Mixup](https://github.com/cjf8899/simple_tool_pytorch#Mixup)
+- [Label-Smoothing](https://github.com/cjf8899/simple_tool_pytorch#Label-Smoothing)
+- [Random-erasing-augmentation](https://github.com/cjf8899/simple_tool_pytorch#Random-erasing-augmentation)
+- [Focal-Loss](https://github.com/cjf8899/simple_tool_pytorch#Focal-Loss)
+
 
 ## Auto-Augment
 
