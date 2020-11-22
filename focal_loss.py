@@ -3,7 +3,6 @@ import torch.nn as nn
 import torch.nn.functional as F
 from torch.autograd import Variable
 
-
 class FocalLoss(nn.Module):
     r"""
         This criterion is a implemenation of Focal Loss, which is proposed in
