@@ -3,7 +3,7 @@
 ## Getting Started
 ```Shell
 cd (yourprojectdir)
-git clone https://github.com/cjf8899/simple-tool-pytorch.git
+git clone https://github.com/cjf8899/simple_tool_pytorch.git
 
 ```
 ## Summary
