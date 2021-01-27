@@ -1,4 +1,4 @@
-# Simple-Tool-Pytorch
+# Simple_Tool_Pytorch
 
 ## Getting Started
 ```Shell
