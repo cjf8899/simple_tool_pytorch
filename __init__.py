@@ -3,4 +3,4 @@ from .autoaugment import *
 from .mixup import *
 from .labelsmoothing import *
 from .randomerasing import *
-from .focal import *
+from .focal_loss import *
